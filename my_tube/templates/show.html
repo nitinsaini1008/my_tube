@@ -1,0 +1,17 @@
+{% load static %}
+{% static "media" as base_url %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>all videos</title>
+</head>
+<body>
+	{% for p in i %}
+	<h3>{{p.name}}</h3>
+<video width="320" height="240" controls>
+  <source src="{{base_url}}/{{p.videofile}}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+{% endfor %}
+</body>
+</html>

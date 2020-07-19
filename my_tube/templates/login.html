@@ -1,0 +1,26 @@
+{% load static %}
+{% static "media" as base_url %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<h1>Enter your details here</h1>
+	<h2>made by</h2>
+	<div>
+		{% for p in i %}
+			<img src="{{base_url}}/{{p.img}}">
+			<h3>{{p.name}}</h3>
+			<h3>{{p.desc}}</h3>
+		{% endfor %}
+	</div>
+	<form method="post" action="add">
+		{% csrf_token %}
+		Enter 1st no.<input type="text" name="a"><br>
+		Enter 2nd no.<input type="text" name="b">
+		<input type="submit">
+	</form>
+
+</body>
+</html>
