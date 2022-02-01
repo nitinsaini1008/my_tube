@@ -15,12 +15,6 @@
 			<h3>{{p.desc}}</h3>
 		{% endfor %}
 	</div>
-	<form method="post" action="add">
-		{% csrf_token %}
-		Enter 1st no.<input type="text" name="a"><br>
-		Enter 2nd no.<input type="text" name="b">
-		<input type="submit">
-	</form>
 
 </body>
 </html>
