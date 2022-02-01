@@ -6,7 +6,7 @@ It is a web app made in Python Django. It is used to upload video and photos and
 # Local Set-Up :- 
     $ git clone https://github.com/nitinsaini1008/my_tube.git
     $ cd my_tube/my_tube/
-    $ pip3 install requirenment.txt
+    $ pip3 install -r requirenment.txt
     $ python3 manage.py migrate
     $ python3 manage.py runserver
 
